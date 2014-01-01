@@ -7,3 +7,4 @@ encoding//flask_sample/flask_sample.py=utf-8
 encoding//flask_sample/model/__init__.py=utf-8
 encoding//flask_sample/service/__init__.py=utf-8
 encoding/runserver.py=utf-8
+separateDerivedEncodings=true
