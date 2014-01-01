@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TOP</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>Hello from Flask</title>
+
+<script type="text/javascript">
+</script>
+</head>
+<body>
+{% if filename %}
+    <p>{{ filename }}をアップロードしました！</p>
+{% else %}
+    {% if error %}
+        <p style="color: red;">{{ error }}アップロードに失敗しているよ。</p>
+    {% else %}
+        <p style="color: red;">アップロードに失敗しているよ。</p>
+    {% endif %}
+{% endif %}
+</body>
+</html>

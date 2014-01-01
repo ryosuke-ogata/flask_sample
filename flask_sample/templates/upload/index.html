@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>upload</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<script type="text/javascript">
+</script>
+</head>
+<body>
+    <h1>upload</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <p>
+        ファイルをアップロードします。<br/>
+        .txtファイルを指定してください。その他のファイルはエラーになります。
+    </p>
+    <form action="/upload/submit" method="post" enctype="multipart/form-data">
+        <input type="file" name="the_file" />
+        <input type="submit" />
+    </form>
+    <p><a href="/">デバッグTOPへ</a></p>
+</body>
+</html>
