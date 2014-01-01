@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,figure,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,footer,header,hgroup,menu,nav,section,time
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent
+}
+
+body {
+	word-break: break-all;
+	font-size-adjust: none;
+	-webkit-text-size-adjust: 100%;
+	font-variant: normal;
+	line-height: 1.5;
+	text-align: left;
+	font-size: 1em;
+	font-family: Arial, "Hiragino Kaku Gothic Pro" monospace
+}
+
+ul {
+	list-style: none
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	color: #06C;
+	text-decoration: none
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #CCC;
+	margin: 1em 0;
+	padding: 0
+}
+
+input,select {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box
+}
+
+input[type=search]:focus {
+	outline-offset: -2px
+}
+
+input[type=search]::-webkit-search-decoration {
+	display: none
+}
+
+html {
+	font-size: 16px
+}
+
+div,input {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body {
+	-webkit-user-select: none;
+	-webkit-touch-callout: none
+}
+
+textarea {
+	-webkit-appearance: none
+}
+
+.fontOrange {
+	color: #f93
+}
+
+.fontWhite {
+	color: #fff
+}
+
+.fontGray {
+	color: #999
+}
+
+.colorWhite {
+	color: #fff
+}
+
+.colorOrange {
+	color: #fc0
+}
+
+.colorDeepOrange {
+	color: #f93 !important
+}
+
+.colorDeepOrange2 {
+	color: #ef5400
+}
+
+.colorDeepYellow {
+	color: #fc0
+}
+
+.colorRed {
+	color: #f33
+}
+
+.colorAqua {
+	color: #09f
+}
+
+.colorGreen {
+	color: #0b0
+}
+
+.colorPurple {
+	color: #e3c
+}
+
+.colorBlack {
+	color: #333
+}
+
+.colorDarkGray {
+	color: #666
+}
+
+.colorGray {
+	color: #999
+}
+
+.colorBrown {
+	color: #63431b
+}
+
+.colorYellow {
+	color: #fff000
+}
+
+.colorYellow.underline {
+	text-decoration: underline
+}
+
+.colorLinkOrange {
+	color: #f74
+}
+
+.colorLinkOrange.underline {
+	text-decoration: underline
+}
+
+.underline {
+	text-decoration: underline
+}
+
+a.debugTop {
+	background: url("/stat/img/ico_controller1_1.gif") center left no-repeat;
+	padding-left: 32px;
+}
+a.contentTop {
+    background: url("/stat/img/ico_controller1_5.gif") center left no-repeat;
+    padding-left: 32px;
+}

@@ -3,7 +3,7 @@ import os, logging
 from werkzeug.utils import secure_filename
 from flask import request, Blueprint, render_template, redirect, url_for
 
-app = Blueprint('upload', __name__, template_folder='templates', url_prefix='/upload')
+app = Blueprint('upload', __name__, url_prefix='/upload')
 
 UPLOAD_FOLDER = '/tmp'
 ALLOWED_EXTENSIONS = set(['txt'])
@@ -17,12 +17,13 @@ def submit():
     error = u'エラーが発生しました。'
     if request.method == 'POST':
         f = request.files['the_file']
-        logging.debug(f)
         if f and allowed_file(f.filename):
             filename = secure_filename(f.filename)
             f.save(os.path.join(UPLOAD_FOLDER, filename))
             # ファイル保存後に結果画面へリダイレクト
             return redirect(url_for('.result') + "?filename=%s" % filename)
+        elif f is None:
+            error = u'ファイルが受信できません。'
         else:
             error = u'このファイルはアップロードできません。[filename=%s]' % f.filename
     return render_template('upload/index.html', error=error)

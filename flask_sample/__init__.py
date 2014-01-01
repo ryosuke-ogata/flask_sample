@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
-import sys,os
+import sys, os
 
 FLASK_APP_DIR = os.path.dirname(os.path.abspath(__file__))
 
 sys.path.append(FLASK_APP_DIR)
 # Flask
 from flask import Flask
-flask = Flask(__name__)
+flask = Flask(__name__, \
+              static_url_path='/stat', \
+              static_folder='static', \
+              template_folder='templates')
 
 # Log
 import logging

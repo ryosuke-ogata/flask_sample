@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TOP</title>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<title>Hello from Flask</title>
-
-<script type="text/javascript">
-</script>
+{% include "_common/meta.html" %}
+{% include "_common/style.html" %}
+{% include "_common/script.html" %}
+<title>アップロード結果</title>
 </head>
 <body>
-{% if filename %}
-    <p>{{ filename }}をアップロードしました！</p>
-{% else %}
-    {% if error %}
-        <p style="color: red;">{{ error }}アップロードに失敗しているよ。</p>
-    {% else %}
-        <p style="color: red;">アップロードに失敗しているよ。</p>
-    {% endif %}
-{% endif %}
+	{% if filename %}
+	    <p>{{ filename }}をアップロードしました！</p>
+	{% else %}
+	    {% if error %}
+	        <p style="color: red;">{{ error }}アップロードに失敗しているよ。</p>
+	    {% else %}
+	        <p style="color: red;">アップロードに失敗しているよ。</p>
+	    {% endif %}
+	{% endif %}
+	<hr/>
+    <p><a href="/upload" class="contentTop">アップロードTOPへ</a></p>
+    <p><a href="/" class="debugTop">デバッグTOPへ</a></p>
 </body>
 </html>
